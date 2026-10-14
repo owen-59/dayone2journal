@@ -1,0 +1,19 @@
+{
+  "name": "dayone2journal",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "zod": "^4.6.7"
+  }
+}
