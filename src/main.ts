@@ -50,7 +50,10 @@ for (let i = 0; i < journalParsed.entries.length; i++) {
         content += `  - ${e.location.latitude}\n`
         content += `  - ${e.location.longitude}\n`
         if (e.location.placeName) {
-            content += `place_name: ${e.location.placeName}\n`
+            content += `place_name: "${e.location.placeName.replace("\n", " ")}"\n`
+        }
+        if (e.location.address) {
+            content += `address: "${e.location.address.replace("\n", " ")}"\n`
         }
     }
 
